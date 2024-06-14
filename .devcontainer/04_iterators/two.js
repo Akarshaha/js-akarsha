@@ -23,10 +23,10 @@ map.set('usa', 'united states')
 map.set('fr' , 'france')
 // // console.log(map);
 
-// for (const [key,value] of map) {
-//     console.log(key +':'+ value);
+ for (const [key,value] of map) {
+     console.log(key +':'+ value);
     
-// }
+ }
 
 
 // objects are not iterable using for off loop
@@ -38,17 +38,17 @@ const MyObj = {
     backend: "sql"
 
 }
-// for (const key in MyObj) {
-//     console.log(`${key} is ${MyObj[key]}`);
+//  for (const key in MyObj) {                                 
+//     console.log(`${key} is ${MyObj[key]}`);        IMP TO UNDERSTAND
     
-// }
+//  }
 
 // for array
 
 // const prg = ['cpp','js','java','python']
 
-// for (const key in prg) {
-//     console.log(prg[key]);
+// for (const key in prg) {            using variable name is must while fetching the 'value' in both objects and arrays
+    // console.log(prg[key]);           if not in objects we get 'key', and in arrays we get index
 // }
 
 
