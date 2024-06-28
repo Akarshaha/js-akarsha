@@ -1,0 +1,80 @@
+BASICS 
+
+console.dir(document)
+console.log(document)
+
+TO FETCH
+console.log(document.links)
+console.log(document.links[2])   // collections
+
+*********IMP ********
+document.getElementById('idname').innerHTML = <h1> gunda <h1/>
+document.getElementById('idname').id
+document.getElementById('idname').className
+document.getElementById('idname').getAttribute('key')   // we will get value in getattribute
+document.getElementById('idname').setAttribute('idname', 'test')   // we can change the name of both id and class
+
+
+id is title
+
+title.style.backgroundcolor = 'blue'
+title.style.padding = "15px"
+title.style.borderRadius = "15px"
+
+title.textContent
+title.innerHTML
+title.innertext  (All three are important)
+
+document.querySelector('h1')
+document.querySelector('.clasname')
+document.querySelector('*title')
+document.querySelector('input[type="password"]')
+ always gives only the first element
+document.querySelector('p: first_child')
+
+const mytitle = document.querySelector('*title')
+mytitle.style.backgroundColor = 'blue'
+mytitle.innertext
+mytitle.innertext = 'one' 
+
+
+queryselectorall
+
+document.querySelectorAll('div')
+// we will get all the tags in div block in nodelist 
+const templist = document.querySelectorAll('div')
+// in nodelist we can use foreach loop but not any other loops you use for arrays and  while using to manipulate should mention index number [] 
+templist[0].style.color = 'green'
+templist.foreachloop(function(t){
+      t.style.backgroundColor = 'blue'     
+})
+
+Array.from(templist) // to convert from nodelist to array
+but it's better to use for each loop rather then converting
+
+
+
+HTML COLLECTION
+document.getElementByClassName('classname')
+// here we get html collection where you can't use any loops
+so need to convert to array
+ const mytemp= document.getElementByClassName('classname')
+  const convertedarray = Array.from(mytemp) 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+                                  
