@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <ul class="language">
+        <li>JAVASCRIPT</li>
+    </ul>
+    <script>
+        function addlanguage(langName) {
+            const li = document.createElement('li')
+            li.innerHTML = langName
+            document.querySelector('.language').appendChild(li)            
+        }
+        addlanguage('python')
+        addlanguage('java')
+        addlanguage('typescript')
+
+        function addnewlang(langname) {
+            const li = document.createElement('li')
+            li.appendChild(document.createTextNode(langname))             //this is so imp to understand using li.append
+            document.querySelector('.language').appendChild(li)
+        }
+        addnewlang('golang')
+
+        ///EDIT
+       const secondprgm = document.querySelector("li:nth-child(2)")
+    //    secondprgm.innerHTML = 'mojo'
+    const newli = document.createElement('li')
+    newli.textContent = "newmojo"
+    secondprgm.replaceWith(newli)  //replacewith is imp
+
+
+    // EDIT
+    const firstelement = document.querySelector("li:first-child")
+    firstelement.outerHTML = '<li>java</li>'
+
+    // REMOVE
+     const la = Document.querySelector("li:nth-child(1)")
+     la.remove();
+
+
+    </script>
+
+    
+</body>
+</html>
