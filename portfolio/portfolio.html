@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#" style="font-size: xx-large; font-style: oblique;">Akarsha H A</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container text-center">
+            <h1>Welcome to My Portfolio</h1>
+            <p class="lead" > I'M SOFTWARE Developer  <span id="typed"></span></p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Me</h2>
+                    <p>Your bio and introduction goes here.</p>
+                </div>
+                <div class="col-md-6">
+                    <!-- Add your image here -->
+                    <img src="profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Description of Project 1.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Description of Project 2.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="project3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Description of Project 3.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="5"
+                                placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <p>Contact information and social media links can go here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Web Development</h4>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Bootstrap & Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Design</h4>
+                    <ul>
+                        <li>Adobe Photoshop</li>
+                        <li>UI/UX Design Principles</li>
+                        <li>Wireframing & Prototyping</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Other Skills</h4>
+                    <ul>
+                        <li>SEO & Digital Marketing</li>
+                        <li>Version Control (Git)</li>
+                        <li>Agile Methodologies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Testimonials</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>"Your testimonial quote here."</p>
+                                <footer class="blockquote-footer">Client Name</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>"Another testimonial quote."</p>
+                                <footer class="blockquote-footer">Client Name</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+     <script>
+
+     // JavaScript for form validation
+document.addEventListener('DOMContentLoaded', function () {
+    var form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function (event) {
+        var name = document.getElementById('name').value.trim();
+        var email = document.getElementById('email').value.trim();
+        var message = document.getElementById('message').value.trim();
+        var error = false;
+
+        // Validate name
+        if (name === '') {
+            showError('name', 'Please enter your name.');
+            error = true;
+        } else {
+            hideError('name');
+        }
+
+        // Validate email
+        if (email === '') {
+            showError('email', 'Please enter your email.');
+            error = true;
+        } else if (!isValidEmail(email)) {
+            showError('email', 'Please enter a valid email address.');
+            error = true;
+        } else {
+            hideError('email');
+        }
+
+        // Validate message
+        if (message === '') {
+            showError('message', 'Please enter your message.');
+            error = true;
+        } else {
+            hideError('message');
+        }
+
+        if (error) {
+            event.preventDefault(); // Prevent form submission if there are errors
+        }
+    });
+
+    function showError(field, message) {
+        var formControl = document.getElementById(field).parentNode;
+        formControl.classList.add('has-error');
+        var errorText = formControl.querySelector('.error-text');
+        errorText.innerText = message;
+    }
+
+    function hideError(field) {
+        var formControl = document.getElementById(field).parentNode;
+        formControl.classList.remove('has-error');
+    }
+
+    function isValidEmail(email) {
+        // Basic email validation regex
+        var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+});
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="typed.min.js"></script>
+
+        var typed = new Typed('#typed', {
+            strings: ['Web Developer', 'Designer', 'Freelancer'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
