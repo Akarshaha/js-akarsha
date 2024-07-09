@@ -1,5 +1,11 @@
 /* Add custom styles here */
+body {
+    background-color: rgb(146, 172, 120);
+}
 
+.header {
+    background-color: rgb(146, 172, 120);;
+}
 #hero {
     height: 100vh;
     background: url('hero-bg.jpg') center/cover no-repeat;
@@ -8,36 +14,53 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(146, 172, 120);
 }
 
 #hero h1 {
     font-size: 3.5rem;
    
 }
-h1 {
-    font-size: 15vw;
-    background-image: url(https://unsplash.it/801);
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
   }
   
+  .typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
 
-
-.navbar {
-    background-color: rgba(0, 0, 0, 0.8) !important;
-
-}
 
 .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 4rem;
     font-weight: bold;
+    font-family: cursive;
+    text-shadow: 2%;
+
 }
 
 .navbar-nav .nav-link {
     font-size: 1.1rem;
+    b
 }
 
 .card {
@@ -53,7 +76,7 @@ footer {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     #hero h1 {
-        font-size: 2.5rem;
+        font-size: 6rem;
     }
 }
 
