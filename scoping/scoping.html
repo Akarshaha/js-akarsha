@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEXICAL SCOPING</title>
+</head>
+<body>
+    <button id="blue">blue</button>
+    <button id="red">red</button>
+
+    
+</body>
+<script>
+//     function init() {
+//     var name = "Mozilla"; 
+//     function displayName() {
+//       console.log(name);
+//     }
+//     displayName();
+//   }
+//   init();
+
+function clickhandler(color) {
+    return function () {
+        document.body.style.backgroundColor = `${color}`
+    }
+    
+}
+
+document.getElementById('blue').onclick = clickhandler('blue')
+document.getElementById('red').onclick = clickhandler('red')
+
+
+  </script>
+</html>
