@@ -21,9 +21,9 @@ title.style.backgroundcolor = 'blue'
 title.style.padding = "15px"
 title.style.borderRadius = "15px"
 
-title.textContent
+title.textContent // we will get all the content in the tag even it is not displayed
 title.innerHTML
-title.innertext  (All three are important)
+title.innertext //we will get only what is displayed in the document (All three are important)
 
 document.querySelector('h1')
 document.querySelector('.clasname')
